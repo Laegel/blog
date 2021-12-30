@@ -33,12 +33,11 @@ const Navbar = () => <nav className="absolute left-0 top-0 h-12 w-full bg-primar
     </div>
   </div>
 
-  <div className="sm:hidden" id="mobile-menu">
+  <div className="sm:hidden bg-primary" id="mobile-menu">
     <div className="px-2 pt-2 pb-3 space-y-1">
-
-      <a rel="nav" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/technos">Technos</a>
-      <a rel="nav" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium" href="/idees">Idées</a>
-      <a rel="nav" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium" href="/reflexions">Réflexions</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/technos">Technos</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/idees">Idées</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/reflexions">Réflexions</a>
     </div>
   </div>
 </nav>;

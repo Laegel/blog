@@ -73,7 +73,7 @@ export class Application {
     const result = this.traverseTreeUntilFound(this.domRoot, item.match);
 
     if (!result) {
-      console.error(`The following item did not match any text content: "${item.match}"`);
+      // console.error(`The following item did not match any text content: "${item.match}"`);
       return;
     }
     result.node.parentElement!.innerHTML = result.node.parentElement!.innerHTML.replace(
@@ -137,7 +137,11 @@ export class Application {
   };
 
   private handleClick = () => {
-    this.domRoot.querySelector(`.${GLOSSARY_CLASS_ITEM}:nth-of-type(${parseInt(this.tooltip.dataset.glssryActiveItem!) + 1})`)?.classList.remove(GLOSSARY_CLASS_ACTIVE);
+    if (!this.tooltip.dataset.glssryActiveItem) {
+      return;
+    }
+
+    this.domRoot.querySelector(`.${GLOSSARY_CLASS_ITEM}:nth-of-type(${parseInt(this.tooltip.dataset.glssryActiveItem) + 1})`)?.classList.remove(GLOSSARY_CLASS_ACTIVE);
     this.tooltip.parentElement?.removeChild(this.tooltip);
     window.removeEventListener("click", this.handleClick);
   };
