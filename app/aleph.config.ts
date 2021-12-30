@@ -43,5 +43,8 @@ const windicss = <Plugin>{
 };
 
 export default <Config>{
+  build: {
+    outputDir: "/docs",
+  },
   plugins: [windicss, markdown()]
 };
