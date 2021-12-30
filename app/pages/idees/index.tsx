@@ -2,6 +2,7 @@ import React from "react";
 import type { SSROptions } from "aleph/types";
 
 import { grabPostsFromServer } from "~/utils/posts.ts";
+import { getURI } from "~/utils/links.ts";
 import Posts from "~/components/posts.tsx";
 import type { PostsSource } from "~/types.ts";
 
@@ -24,7 +25,7 @@ const Ideas = ({ posts }: PostsSource) => {
         J'ai la fâcheuse tendance à multiplier les idées et à démarrer des projets personnels qui n'aboutissent pas.<br />
         Cette partie du blog est dédiée à la mise à profit du temps passé à faire de la conception et de la réalisation.
       </p>
-      <Posts posts={posts} root={"/idees/articles/"} />
+      <Posts posts={posts} root={getURI("/idees/articles/")} />
     </div>
   );
 };

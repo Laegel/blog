@@ -2,6 +2,7 @@ import React from "react";
 import type { SSROptions } from "aleph/types";
 
 import { grabPostsFromServer } from "~/utils/posts.ts";
+import { getURI } from "~/utils/links.ts";
 import Posts from "~/components/posts.tsx";
 import type { PostsSource } from "~/types.ts";
 
@@ -25,7 +26,7 @@ export default ({ posts }: PostsSource) => {
         fonction des besoins. Je relaierai ici certaines news, rédigerai des tests de technologies (langages, bibliothèques, frameworks, ...)
         afin de donner mon avis sur un sujet souvent trop négligé : l'expérience développeur.
       </p>
-      <Posts posts={posts} root={"/technos/articles/"} />
+      <Posts posts={posts} root={getURI("/technos/articles/")} />
     </div>
   );
 };

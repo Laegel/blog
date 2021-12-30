@@ -1,20 +1,21 @@
 import React from "react";
 
 import Logo from "~/components/logo.tsx";
+import { getURI } from "~/utils/links.ts";
 
 const Navbar = () => <nav className="absolute left-0 top-0 h-12 w-full bg-primary">
   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div className="relative flex items-center justify-between h-12">
       <div className="flex-1 flex items-center justify-left h-full">
         <div className="flex-shrink-0 flex items-center h-full">
-          <a rel="nav" className="block h-full" href="/"><Logo colors={["#000", "#000"]} /></a>
+          <a rel="nav" className="block h-full" href={getURI("/")}><Logo colors={["#000", "#000"]} /></a>
         </div>
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
 
-            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href="/technos">Technos</a>
-            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href="/idees">Idées</a>
-            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href="/reflexions">Réflexions</a>
+            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/technos")}>Technos</a>
+            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/idees")}>Idées</a>
+            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/reflexions")}>Réflexions</a>
 
           </div>
         </div>
@@ -35,9 +36,9 @@ const Navbar = () => <nav className="absolute left-0 top-0 h-12 w-full bg-primar
 
   <div className="sm:hidden bg-primary" id="mobile-menu">
     <div className="px-2 pt-2 pb-3 space-y-1">
-      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/technos">Technos</a>
-      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/idees">Idées</a>
-      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href="/reflexions">Réflexions</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/technos")}>Technos</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/idees")}>Idées</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/reflexions")}>Réflexions</a>
     </div>
   </div>
 </nav>;

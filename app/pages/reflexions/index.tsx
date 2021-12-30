@@ -2,6 +2,7 @@ import React from "react";
 import type { SSROptions } from "aleph/types";
 
 import { grabPostsFromServer } from "~/utils/posts.ts";
+import { getURI } from "~/utils/links.ts";
 import Posts from "~/components/posts.tsx";
 import type { PostsSource } from "~/types.ts";
 
@@ -23,7 +24,7 @@ export default ({ posts }: PostsSource) => {
         Ici, je compte porter un regard critique sur le métier, ses avantages et inconvénients, ses normes, ses dérives.<br/>
         Je n'aborderai pas de sujets sous l'angle technique, plutôt philosophique et traiterai davantage des à-côtés.
       </p>
-      <Posts posts={posts} root={"/reflexions/articles/"} />
+      <Posts posts={posts} root={getURI("/reflexions/articles/")} />
     </div>
   );
 };

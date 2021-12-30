@@ -1,6 +1,7 @@
 import React from "react";
 
 import Logo from "~/components/logo.tsx";
+import { getURI } from "~/utils/links.ts";
 
 export default function Home () {
   return (
@@ -16,7 +17,7 @@ export default function Home () {
       <h1 className="text-5xl text-center font-bold mb-4">👋 Hey, bienvenue sur <strong>mon blog</strong> !</h1>
 
       <p className="mb-2">
-        Je m'appelle Valentin (AKA Laegel), je suis <strong>Lead Developer</strong> et je développe (principalement du web) depuis 2010. <br/>
+        Je m'appelle Valentin (AKA Laegel), je suis <strong>Lead Developer</strong> et je développe (principalement du web) depuis 2010. <br />
         Je considère les technologies comme de simples outils et que le plus important reste de répondre au besoin tout en conservant une bonne maintenabilité du code.
       </p>
 
@@ -29,7 +30,7 @@ export default function Home () {
           <div className="bg-technos opacity-20 absolute w-full h-full top-0 left-0">
 
           </div>
-          <a rel="nav" href="/technos" className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
+          <a rel="nav" href={getURI("/technos")} className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
             Technos
           </a>
         </div>
@@ -37,7 +38,7 @@ export default function Home () {
           <div className="bg-idees opacity-20 absolute w-full h-full top-0 left-0">
 
           </div>
-          <a rel="nav" href="/idees" className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
+          <a rel="nav" href={getURI("/idees")} className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
             Idées
           </a>
         </div>
@@ -45,7 +46,7 @@ export default function Home () {
           <div className="bg-reflexions opacity-20 absolute w-full h-full top-0 left-0">
 
           </div>
-          <a rel="nav" href="/reflexions" className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
+          <a rel="nav" href={getURI("/reflexions")} className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
             Réflexions
           </a>
         </div>
