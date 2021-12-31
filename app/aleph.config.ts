@@ -43,7 +43,6 @@ const windicss = <Plugin>{
 };
 
 export default <Config>{
-  basePath: "/blog",
   build: {
     outputDir: "/docs",
   },
