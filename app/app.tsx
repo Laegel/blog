@@ -1,5 +1,5 @@
 import { useRouter } from "aleph/react";
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 
 import { glossarize, Application } from "~/utils/glossarize.ts";
@@ -8,9 +8,13 @@ import Home from "./pages/index.tsx";
 import Navbar from "~/components/navbar.tsx";
 import Logo from "~/components/logo.tsx";
 
+
+
 export default function App ({ Page, pageProps }: { Page: FC, pageProps: Record<string, unknown>; }) {
   const { pathname } = useRouter();
   const getCategory = () => pathname.split("/")[1] || "base";
+
+  const isPost = pathname.split("/")[2] === "articles";
 
   const root = useRef<HTMLElement | null>(null);
 
@@ -20,6 +24,27 @@ export default function App ({ Page, pageProps }: { Page: FC, pageProps: Record<
       glossaryApp = glossarize(glossary, {
         domRoot: root.current,
       });
+    }
+
+    const script = document.createElement("script");
+    const attributes = {
+      src: "https://giscus.app/client.js",
+      id: "giscus-script",
+      "data-repo": "laegel/blog",
+      "data-repo-id": "R_kgDOGmGGhw",
+      "data-category-id": "DIC_kwDOGmGGh84CAjnf",
+      "data-mapping": "pathname",
+      "data-lang": "fr",
+      "data-theme": "dark_protanopia",
+      crossOrigin: "anonymous",
+      async: "",
+    };
+
+    Object.entries(attributes).forEach(([name, value]) =>
+      script.setAttribute(name, value),
+    );
+    if (isPost) {
+      document.body.appendChild(script);
     }
 
     return () => {
@@ -43,6 +68,7 @@ export default function App ({ Page, pageProps }: { Page: FC, pageProps: Record<
           <Page {...pageProps} />
         </div>
 
+        {isPost && <div className="giscus"></div>}
       </main>
       {Page.name !== Home.name && <footer className="h-24 w-full bg-primary">
         <div className="h-6 relative">
