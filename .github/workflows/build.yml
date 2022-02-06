@@ -20,4 +20,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         remote_url: https://github.com/Laegel/blog.git
+        target_branch: release
         target_directory: docs
