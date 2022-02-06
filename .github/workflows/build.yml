@@ -12,7 +12,7 @@ jobs:
       run: deno run -A https://deno.land/x/aleph/install.ts && ./build.sh
 
     - name: deploy docs
-      uses: appleboy/gh-pages-action
+      uses: appleboy/gh-pages-action@v0.0.2
       with:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
