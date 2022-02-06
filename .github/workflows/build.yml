@@ -6,10 +6,9 @@ jobs:
     steps:
     - name: Use Deno 
       uses: denolib/setup-deno@v2
-      run: deno run -A https://deno.land/x/aleph/install.ts
-    - name: Build with Aleph
-      run: ./build.sh
     - uses: actions/checkout@v2
+    - name: Build with Aleph
+      run: deno run -A https://deno.land/x/aleph/install.ts && ./build.sh
   deploy:
     name: Build
     runs-on: ubuntu-latest
