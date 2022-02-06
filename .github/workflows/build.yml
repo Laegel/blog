@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build with Aleph
-      run: cd app && aleph build
+      run: deno run -A https://deno.land/x/aleph/install.ts && cd app && aleph build
