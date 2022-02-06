@@ -30,5 +30,17 @@ export default [
   {
     match: "interface de programmation",
     definition: `"Application Programming Interface" en anglais, récurrent sous l'acronyme "API"`
-  }
+  },
+  {
+    match: "annotations? de type",
+    definition: `"Type hint" en anglais`
+  },
+  {
+    match: "déduction de type",
+    definition: `"Type inference" en anglais`
+  },
+  {
+    match: "refactorisation",
+    definition: `"Refactoring" en anglais`
+  },
 ]

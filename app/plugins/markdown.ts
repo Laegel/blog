@@ -56,7 +56,8 @@ const renderer = {
   list: (body: string, ordered: boolean, start: number) => `<ul class="mb-4 list-disc pl-6">${body}</ul>`,
   // listitem: (text: string, task: boolean, checked: boolean) => `<li class="list-disc">${text}</li>`,
   link: (href: string, _title: string, text: string) => (href.startsWith("/") ? `<a class="text-primary underline underline-offset-1" href="${href}">` : `<a class="text-primary underline underline-offset-1" target="_blank" rel="noreferrer noopener nofollow" href="${href}">`) + text + "</a>",
-  hr: () => `<hr class="!my-6 m-auto text-primary max-w-screen-md"/>`
+  hr: () => `<hr class="!my-6 m-auto text-primary max-w-screen-md"/>`,
+  blockquote: (text: string) => `<blockquote class="italic border-l-4 border-primary pl-2">${text}</blockquote>`,
 };
 marked.use({ renderer });
 
