@@ -12,7 +12,8 @@ const extraClasses = [
   "m-auto", "rounded-sm", "!leading-tight",
   "text-sm", "list-disc", "pl-6", "underline",
   "underline-offset-1", "flex-col", "min-w-screen",
-  "!my-6", "max-w-screen-md",
+  "!my-6", "max-w-screen-md", "border-l-4", "border-primary",
+  "italic", "pl-2",
 ];
 
 const windicss = <Plugin>{
@@ -46,5 +47,5 @@ export default <Config>{
   build: {
     outputDir: "/docs",
   },
-  plugins: [windicss, markdown()]
+  plugins: [markdown()]
 };
