@@ -16,5 +16,5 @@ jobs:
       with:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        pages_directory: 
+        remote_url: https://github.com/Laegel/blog.git
         target_directory: docs
