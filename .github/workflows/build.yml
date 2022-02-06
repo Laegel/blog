@@ -2,9 +2,26 @@ name: build
 on: push
 jobs:
   build:
-    container: denoland/deno:latest
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Use Deno 
+      uses: denolib/setup-deno@v2
+      run: deno run -A https://deno.land/x/aleph/install.ts
     - name: Build with Aleph
-      run: deno run -A https://deno.land/x/aleph/install.ts && cd app && aleph build
+      run: ./build.sh
+    - uses: actions/checkout@v2
+  deploy:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+
+    - name: deploy docs
+      uses: appleboy/gh-pages-action
+      with:
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        remote_url: https://github.com/appleboy/gh-pages-action.git
+        pages_directory: 
+        target_directory: docs
