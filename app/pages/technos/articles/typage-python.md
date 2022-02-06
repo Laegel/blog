@@ -1,7 +1,7 @@
 ---
 title: Introduction au typage dans Python
-created: 2022-02-02
-updated: 2022-02-02
+created: 2022-02-07
+updated: 2022-02-07
 series: Le typage dans Python
 tags: python, dx
 ---
