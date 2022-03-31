@@ -42,12 +42,12 @@ export default function Home () {
             Idées
           </a>
         </div>
-        <div className="flex-1 relative rounded-sm h-48 bg-center bg-cover md:bg-contain" style={{ backgroundImage: `url(/images/reflexions.jpg)` }}>
-          <div className="bg-reflexions opacity-20 absolute w-full h-full top-0 left-0">
+        <div className="flex-1 relative rounded-sm h-48 bg-center bg-cover md:bg-contain" style={{ backgroundImage: `url(/images/divers.jpg)` }}>
+          <div className="bg-divers opacity-20 absolute w-full h-full top-0 left-0">
 
           </div>
-          <a rel="nav" href={getURI("/reflexions")} className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
-            Réflexions
+          <a rel="nav" href={getURI("/divers")} className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-bold text-shadow-around">
+            Divers
           </a>
         </div>
       </div>

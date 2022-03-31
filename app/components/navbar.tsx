@@ -15,7 +15,7 @@ const Navbar = () => <nav className="absolute left-0 top-0 h-12 w-full bg-primar
 
             <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/technos")}>Technos</a>
             <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/idees")}>Idées</a>
-            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/reflexions")}>Réflexions</a>
+            <a rel="nav" className="text-background hover:bg-gray-700 hover:text-white px-3 py-3.5 rounded-md text-sm font-medium" href={getURI("/divers")}>Divers</a>
 
           </div>
         </div>
@@ -38,7 +38,7 @@ const Navbar = () => <nav className="absolute left-0 top-0 h-12 w-full bg-primar
     <div className="px-2 pt-2 pb-3 space-y-1">
       <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/technos")}>Technos</a>
       <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/idees")}>Idées</a>
-      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/reflexions")}>Réflexions</a>
+      <a rel="nav" className="text-background px-3 py-2 rounded-md text-sm font-medium" href={getURI("/divers")}>Divers</a>
     </div>
   </div>
 </nav>;

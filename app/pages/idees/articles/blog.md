@@ -10,7 +10,7 @@ Depuis un moment maintenant, j'ai envie d'écrire et partager mes expériences �
 Ce blog s'articule autour d'un thème principal qui est **le métier de développeur (à travers mon prisme)** et est découpé en trois rubriques : 
 - [Technos](/technos), qui concernera des sujets purement techniques ;
 - [Idées](/idees), qui traitera d'idées et projets que j'ai ou aimerais réaliser ;
-- [Réflexions](/reflexions), qui abordera un aspect plus philosophique.
+- [Divers](/divers), qui abordera un aspect plus philosophique.
 
 ## Choix technique
 

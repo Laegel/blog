@@ -286,7 +286,7 @@ html {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 255 255 255;
 }
 a {
@@ -489,7 +489,7 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 57 177 167;
 }
 .idees {
@@ -497,15 +497,15 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 145 63 223;
 }
-.reflexions {
+.divers {
   --colors-background: 17 17 17;
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 12 184 112;
 }
 .bg-technos {
@@ -516,9 +516,9 @@ textarea::-ms-input-placeholder {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--colors-idees) / var(--tw-bg-opacity));
 }
-.bg-reflexions {
+.bg-divers {
   --tw-bg-opacity: 1;
-  background-color: rgb(var(--colors-reflexions) / var(--tw-bg-opacity));
+  background-color: rgb(var(--colors-divers) / var(--tw-bg-opacity));
 }
 .bg-center {
   background-position: center;
@@ -727,7 +727,7 @@ html {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 255 255 255;
 }
 a {
@@ -930,7 +930,7 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 57 177 167;
 }
 .idees {
@@ -938,15 +938,15 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 145 63 223;
 }
-.reflexions {
+.divers {
   --colors-background: 17 17 17;
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 12 184 112;
 }
 .space-y-1
@@ -1222,7 +1222,7 @@ html {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 255 255 255;
 }
 a {
@@ -1425,7 +1425,7 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 57 177 167;
 }
 .idees {
@@ -1433,15 +1433,15 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 145 63 223;
 }
-.reflexions {
+.divers {
   --colors-background: 17 17 17;
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 12 184 112;
 }
 .rounded-sm {
@@ -1587,7 +1587,7 @@ html {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 255 255 255;
 }
 a {
@@ -1790,7 +1790,7 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 57 177 167;
 }
 .idees {
@@ -1798,15 +1798,15 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 145 63 223;
 }
-.reflexions {
+.divers {
   --colors-background: 17 17 17;
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 12 184 112;
 }
 .bg-center {
@@ -2032,7 +2032,7 @@ html {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 255 255 255;
 }
 a {
@@ -2235,7 +2235,7 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 57 177 167;
 }
 .idees {
@@ -2243,14 +2243,14 @@ textarea::-ms-input-placeholder {
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 145 63 223;
 }
-.reflexions {
+.divers {
   --colors-background: 17 17 17;
   --colors-foreground: 238 238 238;
   --colors-technos: 57 177 167;
   --colors-idees: 145 63 223;
-  --colors-reflexions: 12 184 112;
+  --colors-divers: 12 184 112;
   --colors-primary: 12 184 112;
 }

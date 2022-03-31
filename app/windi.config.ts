@@ -7,7 +7,7 @@ const common = {
   foreground: "#eee",
   technos: "#39b1a7",
   idees: "#913fdf",
-  reflexions: "#0cb870",
+  divers: "#0cb870",
 };
 
 // 4D969F;
@@ -89,8 +89,8 @@ export default defineConfig({
           },
         },
         {
-          name: "reflexions",
-          selectors: [".reflexions"],
+          name: "divers",
+          selectors: [".divers"],
           theme: {
             colors: {
               ...common,
